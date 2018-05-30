@@ -9,8 +9,18 @@
 
 $GLOBALS['pagetitle'] = wp_get_document_title();
 
-require WPORGPATH . 'header.php';
-?>
+?><!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes( 'html' ); ?> class="no-js">
+<head>
+	<meta http-equiv="Content-Type" content="<?php bloginfo( 'html_type' ); ?>; charset=<?php bloginfo( 'charset' ); ?>" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+
+	<?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
 
 <header id="masthead" class="site-header" role="banner">
 	<?php if ( get_query_var( 'is_handbook' ) ) : ?>

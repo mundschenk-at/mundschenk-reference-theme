@@ -11,6 +11,7 @@
 
 </div><!-- #page -->
 
+<?php wp_footer(); ?>
+	</body>
+</html>
 <?php
-
-require WPORGPATH . 'footer.php';
